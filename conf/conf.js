@@ -59,7 +59,7 @@ fs.emptyDir('screenshots/', function (err) {
             if (result.status == 'failed') {
                 browser.getCapabilities().then(function (caps) {
                     var browserName = caps.get('browserName');
- 
+
                     browser.takeScreenshot().then(function (png) {
                         var stream = fs.createWriteStream('screenshots/' + browserName + '-' + result.fullName+ '.png');
                         stream.write(new Buffer(png, 'base64'));
