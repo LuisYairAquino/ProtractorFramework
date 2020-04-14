@@ -19,6 +19,7 @@ exports.config = {
     'browserName': 'firefox',
   'moz:firefoxOptions': {
     'args': ['--safe-mode']
+  }
   },
 
   /*multiCapabilities: [{
