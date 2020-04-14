@@ -15,11 +15,15 @@ exports.config = {
 
   // Capabilities to be passed to the webdriver instance.
   capabilities: {
-    //'browserName': 'chrome'
-    'browserName': 'firefox',
-  'moz:firefoxOptions': {
-    'args': ['--safe-mode']
-  }
+    browserName: 'chrome',
+
+  'goog:chromeOptions': {
+     args: [ "--headless", "--disable-gpu", "--window-size=800,600" ]
+   }
+    //'browserName': 'firefox',
+  //'moz:firefoxOptions': {
+    //'args': ['--safe-mode']
+  //}
   },
 
   /*multiCapabilities: [{
