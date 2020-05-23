@@ -16,6 +16,8 @@ exports.config = {
   // Capabilities to be passed to the webdriver instance.
   capabilities: {
     browserName: 'firefox',
+    "firefox_binary": "C:\Program Files\Mozilla Firefox/firefox",
+    "binary_": "C:\Program Files\Mozilla Firefox/firefox"
 
   //'goog:chromeOptions': {
     // args: [ "--headless", "--disable-gpu", "--window-size=800,600" ]
